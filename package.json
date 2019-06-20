@@ -1,0 +1,24 @@
+{
+  "name": "jmfidext",
+  "version": "1.0.0",
+  "description": "filddler extention",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd ./src && dotnet build && cd .."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jiamao/jmFidExt.git"
+  },
+  "keywords": [
+    "fiddler",
+    "extention"
+  ],
+  "author": "jiamao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jiamao/jmFidExt/issues"
+  },
+  "homepage": "https://github.com/jiamao/jmFidExt#readme"
+}
