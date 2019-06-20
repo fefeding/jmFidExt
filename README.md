@@ -70,7 +70,7 @@ regex:https://qian(-img)?.(tenpay|qq|ehowbuy).com/(.*)
 ```
 http://127.0.0.1
 ```
- > `action`为 `http://127.0.0.1`这种IP格式而且请求串为`https`，转会把请求转为`http`，`http`转`https`反过来即可。
+ > `action`为 `http://127.0.0.1`这种IP格式，当请求为`https`且命中其`match`时，将会把请求转为`http`，`http`转`https`反过来即可。
 
 * **具体的某个请求指向文件或一个文本串**
 ---
