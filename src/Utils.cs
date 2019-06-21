@@ -98,13 +98,14 @@ namespace jmFidExt
                     var domain = m.Groups["domain"].Value;
                     
                     if(proto == "http") {                        
-                        if(!session.isHTTPS && session.port == 443) {
+                        /*if(!session.isHTTPS && session.port == 443) {
+                            // 如果是代理请求，则不做处理
                             if (session.HTTPMethodIs("CONNECT"))
                             {
                                 session["x-replywithtunnel"] = "FakeTunnel";
                                 return;
                             }
-                        }
+                        }*/
                     }
                     //else if(!session.isHTTPS) {
                     //    session.fullUrl = session.fullUrl.Replace("http://", proto + "://");

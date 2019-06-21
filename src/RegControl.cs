@@ -221,6 +221,13 @@ namespace jmFidExt
             //不采用，则不处理
             if (!chkEnabled.Checked) return;
 
+            // 如果是代理请求，则不做处理
+            if (session.HTTPMethodIs("CONNECT"))
+            {
+                session["X-ReplyWithTunnel"] = "Fake for HTTPS Tunnel";
+                return;
+            }
+
             var config = GetRules();
             if (config.groups == null || config.groups.Count == 0) return;
             foreach (var g in config.groups)
