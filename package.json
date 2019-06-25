@@ -11,6 +11,11 @@
     "type": "git",
     "url": "git+https://github.com/jiamao/jmFidExt.git"
   },
+  "devDependencies": {
+    "dot": "^7.5.2",
+    "@commitlint/config-conventional": "^7.5.0",
+    "cz-conventional-changelog": "^2.1.0"
+  },
   "keywords": [
     "fiddler",
     "extention"

@@ -1,4 +1,5 @@
 ﻿# jmFidExt  - Fiddler 代理插件
+[![Build Status](https://travis-ci.org/jiamao/jmFidExt.svg?branch=master)](https://travis-ci.org/jiamao/jmFidExt)
 
 本插件作用是把某些请求代理到指定的IP（端号）或文件，设置简便。
 

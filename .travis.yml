@@ -1,0 +1,16 @@
+language: csharp
+dotnet: 2.2.300
+solution: ./src/jmFidExt.sln
+
+branches:
+  only:
+    - master
+
+script: 
+  - cd ./src
+  - dotnet build
+  - cd ../
+
+notifications:
+  email:
+    - haofefe@163.com
