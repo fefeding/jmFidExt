@@ -1,5 +1,7 @@
 language: csharp
-dotnet: 2.2.300
+mono: none
+sudo: required
+dotnet: 2.2
 
 branches:
   only:
@@ -7,12 +9,17 @@ branches:
 
 script: 
   - cd ./src
+  - dotnet restore
   - dotnet build
   - cd ../
 
 cache:
   directories:
   - bin
+
+global:
+    - DOTNET_SKIP_FIRST_TIME_EXPERIENCE=true
+    - DOTNET_CLI_TELEMETRY_OPTOUT=1
 
 notifications:
   email:
