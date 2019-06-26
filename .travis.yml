@@ -10,6 +10,10 @@ script:
   - dotnet build
   - cd ../
 
+cache:
+  directories:
+  - bin
+
 notifications:
   email:
     - haofefe@163.com
