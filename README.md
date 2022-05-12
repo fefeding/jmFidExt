@@ -3,8 +3,6 @@
 
 本插件作用是把某些请求代理到指定的IP（端号）或文件，设置简便。
 
-English: [https://github.com/jiamao/jmFidExt/blob/master/README_en.md](https://github.com/jiamao/jmFidExt/blob/master/README_en.md)
-
 ### 示图 ##
 
 ![截图](https://raw.githubusercontent.com/jiamao/jmFidExt/master/imgs/s.jpg)
